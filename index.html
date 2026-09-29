@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareerOS, a personal job-search assistant</title>
+<meta name="description" content="CareerOS is a personal job-search assistant built by Ali Jabbar for his own use.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root { --bg: #f6f1e8; --surface: #fffdf8; --ink: #1c2026; --muted: #59636f; --line: #ded6c6; --accent: #b94a20;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif; --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0d1217; --surface: #15191e; --ink: #e0e9f4; --muted: #94a0ae; --line: #2a3036; --accent: #f59a6b; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--ink); font: 18px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { width: min(100% - 40px, 44rem); margin-inline: auto; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--bg); padding: 10px 14px; border-radius: 8px; }
+.skip:focus { left: 12px; }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; gap: 20px; min-height: 64px; flex-wrap: wrap; }
+.mark { display: flex; align-items: center; gap: 10px; font: 600 1.3rem/1 var(--serif); color: var(--ink); text-decoration: none; }
+.mark svg { color: var(--accent); }
+nav { margin-left: auto; display: flex; gap: 22px; }
+nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+nav a[aria-current="page"] { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 6px; }
+main { flex: 1; padding: 48px 0 64px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; letter-spacing: -.01em; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); margin: 0 0 20px; }
+h2 { font-size: 1.5rem; margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1.2rem; margin: 1.8rem 0 .4rem; }
+p, ul, ol, table, blockquote { margin: 0 0 1.05rem; }
+ul, ol { padding-left: 1.4rem; } li { margin-bottom: .4rem; }
+blockquote { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; color: var(--muted); }
+.tw { overflow-x: auto; margin: 0 0 1.05rem; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border-top: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { font-weight: 600; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 .3em; }
+.home h1 + p { font-size: 1.2rem; color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding: 28px 0 44px; color: var(--muted); font-size: .92rem; }
+footer .wrap { display: flex; gap: 10px 26px; flex-wrap: wrap; justify-content: space-between; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body class="home">
+<a class="skip" href="#main">Skip to the content</a>
+<header><div class="wrap"><a class="mark" href="index.html" aria-label="CareerOS home"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 7.5v9M12 7.5v5.5M16 7.5v7"/></svg>CareerOS</a><nav aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy notice</a></nav></div></header>
+<main id="main"><div class="wrap">
+<h1>CareerOS</h1>
+<p>CareerOS is a personal job-search assistant built by Ali Jabbar for his own use. It runs on his own laptop and is not offered to anyone else.</p>
+<p>It keeps track of the roles he applies for, reads the replies that arrive by email, and puts interview and assessment times in his calendar. Nothing is sent from his account unless he presses Send himself.</p>
+<p>To do this, CareerOS connects to his Google account from the laptop it runs on. It reads and labels his job-application emails, saves drafts for him to review, sends only an email he has approved, and adds events to his calendar. What it stores stays on the laptop, with backups in his own OneDrive.</p>
+<p><a href="privacy.html">Privacy notice</a> · Contact: <a rel="noopener" href="https://github.com/alijabbar04">github.com/alijabbar04</a></p>
+</div></main>
+<footer><div class="wrap"><span>CareerOS</span><nav aria-label="Footer"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy notice</a></nav></div></footer>
+</body>
+</html>

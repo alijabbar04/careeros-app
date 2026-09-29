@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareerOS privacy notice</title>
+<meta name="description" content="CareerOS is a personal job-search assistant that Ali Jabbar built and runs for himself on his own laptop.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root { --bg: #f6f1e8; --surface: #fffdf8; --ink: #1c2026; --muted: #59636f; --line: #ded6c6; --accent: #b94a20;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif; --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0d1217; --surface: #15191e; --ink: #e0e9f4; --muted: #94a0ae; --line: #2a3036; --accent: #f59a6b; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--ink); font: 18px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { width: min(100% - 40px, 44rem); margin-inline: auto; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--bg); padding: 10px 14px; border-radius: 8px; }
+.skip:focus { left: 12px; }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; gap: 20px; min-height: 64px; flex-wrap: wrap; }
+.mark { display: flex; align-items: center; gap: 10px; font: 600 1.3rem/1 var(--serif); color: var(--ink); text-decoration: none; }
+.mark svg { color: var(--accent); }
+nav { margin-left: auto; display: flex; gap: 22px; }
+nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+nav a[aria-current="page"] { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 6px; }
+main { flex: 1; padding: 48px 0 64px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; letter-spacing: -.01em; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); margin: 0 0 20px; }
+h2 { font-size: 1.5rem; margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1.2rem; margin: 1.8rem 0 .4rem; }
+p, ul, ol, table, blockquote { margin: 0 0 1.05rem; }
+ul, ol { padding-left: 1.4rem; } li { margin-bottom: .4rem; }
+blockquote { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; color: var(--muted); }
+.tw { overflow-x: auto; margin: 0 0 1.05rem; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border-top: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { font-weight: 600; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 .3em; }
+.home h1 + p { font-size: 1.2rem; color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding: 28px 0 44px; color: var(--muted); font-size: .92rem; }
+footer .wrap { display: flex; gap: 10px 26px; flex-wrap: wrap; justify-content: space-between; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header><div class="wrap"><a class="mark" href="index.html" aria-label="CareerOS home"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 7.5v9M12 7.5v5.5M16 7.5v7"/></svg>CareerOS</a><nav aria-label="Pages"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy notice</a></nav></div></header>
+<main id="main"><div class="wrap">
+<h1>CareerOS privacy notice</h1>
+<p>Effective 2026-09-29</p>
+<h2>What CareerOS is</h2>
+<p>CareerOS is a personal job-search assistant that Ali Jabbar built and runs for himself on his own laptop. It is not a service offered to other people, and it holds no one's data but his own. This notice explains what it does with the Google account it connects to, because Google asks every connected application to say so plainly.</p>
+<h2>What it accesses in Google</h2>
+<p>CareerOS connects to Google from the laptop it runs on, using an OAuth client that belongs to that laptop. It asks for three permissions:</p>
+<ul>
+<li><strong>Gmail, read (<code>gmail.readonly</code>):</strong> to read job-application emails, such as acknowledgements, assessment invitations, interview invitations and replies from employers.</li>
+<li><strong>Gmail, modify (<code>gmail.modify</code>):</strong> to label those emails so they are easy to find, to save a draft email for Ali to review, and to send an email only when he has read it and pressed Send himself. CareerOS never sends anything on its own.</li>
+<li><strong>Calendar events (<code>calendar.events</code>):</strong> to add interview and assessment times to his calendar.</li>
+</ul>
+<h2>How the data is used</h2>
+<p>The emails and calendar entries are used for one purpose: helping Ali keep track of his own job applications and prepare for the next step. CareerOS matches emails to the applications it already knows about, notes deadlines and invitations, and shows him what needs a decision.</p>
+<p>CareerOS uses Anthropic's Claude, an AI model, on Ali's own Anthropic account: for tasks he asks for, such as a reply to an employer or booking an interview time, and while he builds and maintains CareerOS with Claude's help. In doing so Claude may read parts of these emails. That processing happens under Ali's own Anthropic account and its privacy settings; CareerOS does not share the emails with anyone else.</p>
+<p>Short notices about new job emails (the sender, the subject and any deadline) are sent to Ali's own phone and to his private Discord channel, so he sees them in time.</p>
+<h2>Where the data is kept</h2>
+<p>Everything CareerOS stores lives on Ali's laptop, in a local database and local files, with backups in his own OneDrive. There is no CareerOS server.</p>
+<h2>What is never done with it</h2>
+<p>The data is not sold. It is not shared with third parties for their own use. It is not used for advertising, and CareerOS does not use it to train AI models. No person other than Ali reads it.</p>
+<h2>Google's Limited Use requirements</h2>
+<p>CareerOS complies with the Google API Services User Data Policy. In Google's own words: the use of information received from Google Workspace scopes will adhere to the Google User Data Policy, including the Limited Use requirements. The policy is at <a rel="noopener" href="https://developers.google.com/terms/api-services-user-data-policy">developers.google.com/terms/api-services-user-data-policy</a>.</p>
+<h2>How long it is kept</h2>
+<p>Data is kept on the laptop while Ali uses CareerOS, and he can delete it at any time. Withdrawing access (below) stops any further collection.</p>
+<h2>Revoking access</h2>
+<p>Access can be withdrawn at any time at <a rel="noopener" href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Withdrawing it stops CareerOS reading or changing anything in the Google account from that moment.</p>
+<h2>Changes to this notice</h2>
+<p>If what CareerOS does with Google data changes, this notice will be updated and the effective date above will change with it.</p>
+<h2>Contact</h2>
+<p>Questions about this notice can be raised through Ali Jabbar's GitHub profile: <a rel="noopener" href="https://github.com/alijabbar04">github.com/alijabbar04</a>.</p>
+</div></main>
+<footer><div class="wrap"><span>CareerOS</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy notice</a></nav></div></footer>
+</body>
+</html>
